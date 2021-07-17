@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:tflite/tflite.dart';
@@ -75,6 +76,21 @@ class MyId extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+                body: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <widget>[
+                    TextField(
+                      autofocus: False,
+
+                    ),
+                    RaisedButton(
+                      onPressed(){
+                        Navigator.of(context) => Options()
+                    }
+                    )
+
+                  ]
+                ),
                 Center(
                   child: ElevatedButton(
                     child: Text('Self diagnose'),
@@ -97,61 +113,9 @@ class MyId extends StatelessWidget {
     );
   }
 }
-class MyAppOne extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
 
-class _MyAppState extends State<MaterialApp> {
-  bool _myBoolean = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Checkbox(
-        value: _myBoolean,
-        onChanged: (value) {
-          setState(() {
-            value; // rebuilds with new value
-          });
-        },
-      ),
-    );
-  }
-}
 
 
 
 // ignore: must_be_immutable
-class Options extends StatelessWidget {
-  bool value = false;
-  @override
-  Widget build(BuildContext context) {
 
-    return Scaffold(
-      backgroundColor: Colors.grey[900],
-      appBar: AppBar(
-        title: Text('Action Selection'),
-        centerTitle: true,
-        backgroundColor: Colors.grey[850],
-        elevation: 0.0,
-      ),
-
-      body: Center(
-
-
-        child: ElevatedButton(
-          child: Text('Go back'),
-          onPressed: () {
-            // Navigate to second route when tapped.
-            Navigator.pop(context);
-
-          },
-        ),
-      ),
-
-    );
-
-  }
-
-}
