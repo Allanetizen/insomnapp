@@ -25,12 +25,16 @@ dependencies:
     sdk: flutter
 
 
+
+
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
   url_launcher: ^5.4.0
   tflite: ^1.1.2
+
 
 
 dev_dependencies:
@@ -55,6 +59,8 @@ flutter:
     - assets/converted_model.tflite
     - assets/images/allanpic.jpg
     - assets/images/child.jpg
+    - assets/images/insomnia1.png
+    - assets/images/insomnapp.png
 
   #     - images/a_dot_burr.jpeg
 #     - images/a_dot_ham.jpeg
