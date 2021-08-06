@@ -1,0 +1,17 @@
+//loading the model
+String res = await Tflite.loadModel(
+  model: "assets/insomnia_model.tflite",
+  labels: "assets/labels.txt",
+  numThreads: 1, // defaults to 1
+  isAsset: true, // defaults to true, set to false to load resources outside assets
+  useGpuDelegate: false // defaults to false, set to true to use GPU delegate
+);
+//release resources
+await Tflite.close();
+
+//output format
+{
+  index: 0,
+  label: "medium",
+  confidence: 0.629
+}
