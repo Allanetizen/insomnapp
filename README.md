@@ -12,7 +12,7 @@ Run flutter pub get from the terminal(android studio) to install dependencies re
 ## Using it
 **The main page has three Buttons:**
 
-<img src "https://user-images.githubusercontent.com/39994438/129349956-57eeafe9-d667-444c-bfe6-6060bf24d19f.png">
+<img src "https://user-images.githubusercontent.com/39994438/129349956-57eeafe9-d667-444c-bfe6-6060bf24d19f.png" width ="810" height ="1665">
 
 - Self diagnosis - will direct to the webview url for self diagnosis of insomnia where you will be required to fill in inputs and click predict
 
